@@ -26,9 +26,12 @@ url: "https://yuummmer.github.io" # the base hostname & protocol for your site, 
 github_username:  yuummmer
 
 # Build settings
-remote_theme: pages-themes/architect@v0.2.0
+remote_theme: "abhinavs/moonwalk"
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
