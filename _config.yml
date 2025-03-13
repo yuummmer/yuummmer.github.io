@@ -18,18 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: My awesome title
+author: Jennifer Slotnick
 description: >-
   This is my basic website!
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yuummmer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  yuummmer
 
 # Build settings
 remote_theme: "abhinavs/moonwalk"
+theme_config:
+  appearance: "dark" # can be "light", "dark" or "auto"
+  show_navbar: true # show horizontal navbar
 plugins:
   - jekyll-remote-theme
-  - jekyll-seo-tag
+  - jekyll-soopr-seo-tag
   - jekyll-sitemap
   - jekyll-feed
 
