@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<a href="{{ "/" | relative_url }}">← Back to Home</a>
+<h1 class="post-title">{{ page.title }}</h1>
+
+{% include date_and_social_share.html %}
+
+{{ content }}
+
+<!-- Utterances Comment Section -->
+<script src="https://utteranc.es/client.js"
+        repo="https://github.com/yuummmer/yuummmer.github.io.git"
+        issue-term="pathname"
+        theme="icy-dark"
+        crossorigin="anonymous"
+        async>
+</script>

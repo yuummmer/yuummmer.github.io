@@ -5,6 +5,6 @@
 layout: home
 title: Home page
 ---
-I’m Jennifer. Researcher, programmer, artist, exploring soft technologies and sociotechnical systems.
+I’m Jennifer—researcher, programmer, and artist—exploring sociotechnical systems.
 
-If you want to know what I'm doing, try [looking at my research](/research/)
+Curious about my work? Check out [my research](/research/).
