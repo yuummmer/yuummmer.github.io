@@ -22,7 +22,7 @@ title: Your awesome title
 description: >-
   This is my basic website!
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://yuummmer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  yuummmer
 
 # Build settings
