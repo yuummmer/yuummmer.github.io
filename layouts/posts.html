@@ -3,17 +3,41 @@ layout: default
 ---
 
 <a href="{{ "/" | relative_url }}">← Back to Home</a>
-<h1 class="post-title">{{ page.title }}</h1>
 
-{% include date_and_social_share.html %}
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% include date_and_social_share.html %}
+        <p class="post-meta">
+            {{ page.date | date: "%B %d, %Y" }} &middot;
+            {% for category in page.categories %}
+                <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">{{ category }}</a>
+            {% endfor %}
+        </p>
+    </header>
 
-{{ content }}
+    <div class="post-content">
+        {{ content }}
+    </div>
 
-<!-- Utterances Comment Section -->
-<script src="https://utteranc.es/client.js"
-        repo="https://github.com/yuummmer/yuummmer.github.io.git"
+    <hr>
+
+    <!-- Utterances Comment Section -->
+    <script src="https://utteranc.es/client.js"
+        repo="yuummmer/yuummmer.github.io"
         issue-term="pathname"
         theme="icy-dark"
         crossorigin="anonymous"
         async>
-</script>
+    </script>
+
+    <!-- Navigation between posts -->
+    <div class="post-navigation">
+        {% if page.previous %}
+            <a class="prev-post" href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+        {% endif %}
+        {% if page.next %}
+            <a class="next-post" href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
+        {% endif %}
+    </div>
+</article>

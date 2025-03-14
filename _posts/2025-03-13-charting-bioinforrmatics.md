@@ -3,6 +3,7 @@ layout: post
 title: "Charting My Path in Bioinformatics"
 date: 2025-03-13 13:07:03 -0700
 categories: bioinformatics journey
+permalink: /bioinformatics/journey/:year/:month/:day/:title/
 ---
 
 I’m currently pursuing an Applied Bioinformatics certificate at UC San Diego, building on my background in computational biology and data-driven research. This website will serve as a space to document what I’m learning, share projects, and reflect on my journey.
