@@ -21,7 +21,6 @@
 title: Jennifer Slotnick
 author: Jennifer Slotnick
 description: >-
-  " "
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  yuummmer
@@ -29,20 +28,24 @@ github_username:  yuummmer
 # Build settings
 remote_theme: "abhinavs/moonwalk"
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
-  appearance_toggle: true # if appearance can be switched by user
-  back_home_text: "home.." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description
-  show_navbar: true # show horizontal navbar
-  show_footer: true # show footer links in home page,add in _data/home.yml
-  show_copyright: true # show copyright notice in footer
-  # following keys are using to create home layout
-  show_projects: true # show projects as cards, add in _data/home.yml
-  show_blog: true # show blog posts added in _posts
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
-  show_reading_time: true # show number of words and reading time in the blog posts
-  show_tags: true # show tags in a blog posts
+  appearance: "auto"
+  appearance_toggle: true
+  back_home_text: "home.."
+  date_format: "%Y-%m-%d"
+  show_description: true
+  show_navbar: true
+  show_footer: true
+  show_copyright: true
+  show_projects: true
+  show_blog: true
+  show_misc_list: false
+  show_reading_time: true
+  show_tags: true
+
+  # Add this line to show the "Projects" title
+  home:
+    title_projects: "Projects"
+    title_blog: "Blog"
 
 plugins:
   - jekyll-remote-theme
