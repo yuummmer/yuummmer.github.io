@@ -41,6 +41,7 @@ theme_config:
   show_misc_list: false
   show_reading_time: true
   show_tags: true
+  show_pages: true
 
   # Add this line to show the "Projects" title
   home:
