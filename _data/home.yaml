@@ -1,4 +1,8 @@
 navbar_entries:
+
+  - title: Now
+    url: /now/
+
   - title: About
     url: about
 
