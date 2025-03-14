@@ -50,6 +50,8 @@ theme_config:
 collections:
   projects:
     output: true
+  pages:
+    output: true
 
 plugins:
   - jekyll-remote-theme
