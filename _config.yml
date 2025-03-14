@@ -47,6 +47,10 @@ theme_config:
     title_projects: "Projects"
     title_blog: "Blog"
 
+collections:
+  projects:
+    output: true
+
 plugins:
   - jekyll-remote-theme
   - jekyll-soopr-seo-tag

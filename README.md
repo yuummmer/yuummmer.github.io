@@ -32,7 +32,7 @@ To run this website locally:
    The website should now be accessible at `http://localhost:4000`.
 
 ## Deployment
-The site is hosted on **Cloudflare Pages**. Any changes pushed to the `main` branch will trigger a rebuild and deploy automatically.
+The site is hosted on **GitHub Pages**. Any changes pushed to the `main` branch will trigger a rebuild and deploy automatically.
 
 ## Contributing
 If you'd like to suggest improvements, feel free to open an issue or submit a pull request.
