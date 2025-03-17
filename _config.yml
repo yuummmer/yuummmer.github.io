@@ -53,6 +53,9 @@ collections:
     output: true
   pages:
     output: true
+  posts:
+    output: true
+
 
 # Enable posts
 defaults:
