@@ -54,7 +54,16 @@ collections:
   pages:
     output: true
 
+# Enable posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 include: ["_pages"]
+permalink: /:categories/:year/:month/:day/:title/
 
 plugins:
   - jekyll-remote-theme

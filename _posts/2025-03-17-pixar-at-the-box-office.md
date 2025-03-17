@@ -2,8 +2,8 @@
 layout: post
 title: "Pixar at the Box Office: Do Sequels Make More Money?"
 date: 2025-03-17
-categories: [statistics, data-analysis]
-permalink: /statistics/box-office/:year/:month/:day/:title/
+categories: statistics
+permalink: /bioinformatics/journey/:year/:month/:day/:title/
 ---
 
 > "Inspirational quote related to the topic."  
