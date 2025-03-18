@@ -11,7 +11,7 @@ permalink: /bioinformatics/journey/:year/:month/:day/:title/
 
 ### Introduction  
 
-"Pixar claims, “sequels are not part of our business model.” But do the numbers back that up? [As I was learning R](/bioinformatics/journey/2025/03/13/charting-bioinformatics/), I wanted to test this claim using data—so I analyzed Pixar's films, box office performance, and critic reviews using regression modeling."
+"Pixar has stated that, “sequels are not part of our business model.” But what patterns emerge from box office performance and critical reception? [As I was learning R](/bioinformatics/journey/2025/03/13/charting-bioinformatics/), I explored this question using regression modeling."
 
 To immerse myself in real-world data analysis, I joined the [Data Science Learning Community](https://dslc.io/) on Slack and discovered the #chat-tidytuesday channel. It just so happened to be Tuesday, and a Zoom session was starting in 10 minutes! I listened in as the group explored data from the Long Beach Animal Shelter, and I was fascinated by the many different ways people interpreted the information. Inspired, I decided to join the next TidyTuesday challenge.
 
@@ -137,7 +137,7 @@ Here is the resulting heatmap!
 Looking at this, I noticed that CinemaScore ratings didn’t vary much, while Metacritic scores showed a wider range of opinions. Another interesting detail—Luca is missing data. I kept it in the visualization because it’s best practice not to remove missing values without considering their context.
 
 ### Do Box Office & Reviews Predict Pixar Sequels?  
-To explore this, I built a **logistic regression model**, which predicts the likelihood of a Pixar movie being a sequel (yes/no) based on:  
+To explore this, I built a **logistic regression model**, examining how factors like Metacritic score, box office revenue in the U.S. and Canada, and budget are associated with the likelihood of a Pixar movie being a sequel.
 
 - **Metacritic score** (critical reception)  
 - **Box office revenue in the U.S. and Canada** (financial success)  
@@ -157,7 +157,7 @@ Resulting in:
 The coefficients tell us how much each factor influences the odds of a sequel. A positive coefficient means the variable increases the likelihood of a sequel, while a negative coefficient decreases it.
 
 ### Visualizing Sequel Probabilities
-To make the results clearer, I plotted the predicted probability of a sequel against the box office earnings in the U.S. and Canada.
+To better understand these patterns, I plotted the predicted probability of a sequel against box office earnings in the U.S. and Canada.
 
 #### Generating the Plot
 I first used the predict() function to compute sequel probabilities from the regression model:
@@ -190,23 +190,23 @@ Each point is a Pixar film. The blue curve shows how **higher box office earning
 Looking at the trend, we can see that higher box office earnings tend to increase the probability of a sequel. This supports our earlier finding that financial success is a key factor in Pixar’s sequel decisions.
 
 ### Interpreting the Results
-So what does this mean?
+So what patterns did the data reveal?
 
 - 🎬 Box Office Revenue Matters! (p = 0.0662) → This is the strongest predictor. More money at the box office = higher odds of a sequel.
 - 🤔 Do Critics Matter? (p = 0.0782) → Weak evidence suggests that movies with lower Metacritic scores might be more likely to get sequels (which is surprising!).
 - 💰 Budget? Not Important. (p = 0.8252) → Pixar’s initial investment in a film doesn’t seem to impact whether they greenlight a sequel.
 
-While none of these predictors reach the strict p < 0.05 threshold, box office revenue is the strongest factor, suggesting that Pixar is more likely to produce sequels for films that perform well financially.
+While none of these predictors meet the strict p < 0.05 threshold, box office revenue has the strongest relationship, suggesting that financial success may be a consideration in Pixar’s sequel decisions.
 
 So, despite Ed Catmull’s statement, money does seem to play a role in Pixar’s sequel decisions. 🎬💰
 
 ### Key Takeaways  
-**1. Box office success predicts sequels** – Movies that earn more at the U.S. and Canada box office are more likely to get a sequel, suggesting financial performance influences Pixar’s decisions.  
+**1. Box office success is associated with sequels** – Movies that perform well financially tend to have a higher probability of getting a sequel.
 
-**2. Critical reception has a weaker effect** – While lower Metacritic scores slightly correlate with a higher chance of a sequel, the relationship isn’t strong enough to be conclusive.  
+**2. Critical reception shows a weaker effect** – There is some evidence suggesting that lower Metacritic scores might be linked to sequel production, but it’s not conclusive.  
 
-**3. Budget doesn’t seem to matter** – The production budget of a Pixar movie doesn’t significantly impact whether it gets a sequel, meaning Pixar isn’t necessarily investing more upfront in films they expect to franchise.  
+**3. Budget doesn’t appear to be a strong factor** – The initial production budget of a film doesn’t seem to have a significant relationship with whether Pixar greenlights a sequel.  
 
 This project reinforced my understanding of data wrangling, visualization, and animation in R. If you're interested in trying a similar analysis, I highly recommend TidyTuesday as a great place to start!  
 
-Let me know what you think, and feel free to share your own visualizations! 🚀
+Let me know what you think!
