@@ -11,7 +11,7 @@ permalink: /bioinformatics/journey/:year/:month/:day/:title/
 
 ### Introduction  
 
-"Pixar has stated that, “sequels are not part of our business model.” But what patterns emerge from box office performance and critical reception? [As I was learning R](/bioinformatics/journey/2025/03/13/charting-bioinformatics/), I explored this question using regression modeling."
+"Pixar has stated that, “sequels are not part of our business model.” But what patterns emerge from box office performance and critical reception? [As I was learning R](/bioinformatics/journey/2025/03/13/charting-bioinformatics/), I explored this question using regression modeling.
 
 To immerse myself in real-world data analysis, I joined the [Data Science Learning Community](https://dslc.io/) on Slack and discovered the #chat-tidytuesday channel. It just so happened to be Tuesday, and a Zoom session was starting in 10 minutes! I listened in as the group explored data from the Long Beach Animal Shelter, and I was fascinated by the many different ways people interpreted the information. Inspired, I decided to join the next TidyTuesday challenge.
 
@@ -119,7 +119,7 @@ public_response <- public_response_raw %>%
 ```
 By converting these letter grades, I ensured they could be used in statistical models without issues.
 With these transformations complete, I was ready to visualize how critics’ ratings compared across Pixar films
-```
+
 ### Creating the Heatmap
 With the data in the right format, I used **ggplot2** to generate a heatmap. Each tile represents a Pixar movie's rating from a specific critic, with colors indicating the score—**red for lower ratings** and **green for higher ratings**.
 ```r
