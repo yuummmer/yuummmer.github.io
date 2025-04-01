@@ -9,6 +9,10 @@ categories: projects
 
 ## Amazon Annual Report Analyzer  
 
+![Amazon Annual Report Analyzer](/assets/static/top10words_amazonreportanalyzer.jpeg)
+![Amazon Annual Report Analyzer](/assets/static/upload_and_summary_amazonreportanalyzer.jpeg)
+![Amazon Annual Report Analyzer](/assets/static/further_questions_amazonreportanalyzer.jpeg)
+
 ### 🔬 Overview  
 This project is an interactive web app that surfaces key themes and strategic focus areas in Amazon’s annual reports. By combining traditional text mining with retrieval-augmented generation (RAG) and LLMs, the app helps users analyze how Amazon narrates its evolving role in society, from retail to cloud computing, logistics, entertainment, and beyond.
 
