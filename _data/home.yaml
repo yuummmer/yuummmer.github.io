@@ -18,9 +18,9 @@ project_entries:
     url: fda-chatbot
     desc: An interactive chatbot that helps users find answers based on FDA guidelines for cosmetics.
 
-  # - title: Project 2
-  #   url: overview-post
-  #   desc: Projects are shown in card layout
+  - title: Amazon Analyzer
+    url: amazon-analyzer
+    desc: An AI powered web app that uses keywords to surface Amazon focus areas
 
   # - title: Project 3
   #   url: overview-post
