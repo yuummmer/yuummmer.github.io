@@ -1,36 +1,35 @@
 navbar_entries:
-
   - title: About
-    url: about
+    url: /about/
 
   - title: Bioinformatics
-    url: bioinformatics
+    url: /bioinformatics/
 
   - title: Skills
-    url: skills
+    url: /skills/
 
   - title: Glass Art
-    url: glass
+    url: /glass/
 
   - title: Blog
-    url: blog
+    url: /blog/
 
   - title: Contact
-    url: contact
+    url: /contact/
 
 
 project_entries:
   - title: FDA Cosmetic Advisor Chatbot
     url: fda-chatbot
     desc: |
-    A chatbot built using a retrieval-augmented generation (RAG) system that helps users understand FDA regulations for cosmetics.  
-    *Focus: document summarization, ChromaDB, LangChain, PDF ingestion* 
+      A chatbot built using a retrieval-augmented generation (RAG) system that helps users understand FDA regulations for cosmetics.  
+      *Focus: document summarization, ChromaDB, LangChain, PDF ingestion* 
 
   - title: Amazon Annual Report Analyzer
     url: amazon-analyzer
     desc: |
-    A Streamlit app that uses LLMs and data visualizations to explore strategic shifts in Amazon’s annual reports over 19 years.  
-    *Focus: sentiment analysis, word frequency trends, thematic comparisons, early forecasting ideas*
+      A Streamlit app that uses LLMs and data visualizations to explore strategic shifts in Amazon’s annual reports over 19 years.  
+      *Focus: sentiment analysis, word frequency trends, thematic comparisons, early forecasting ideas*
 
   # - title: Project 3
   #   url: overview-post
