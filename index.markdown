@@ -5,6 +5,6 @@
 layout: home
 title: Home page
 ---
-I’m Jennifer—researcher, programmer, and artist—exploring sociotechnical systems.
+I’m Jennifer—glass artist and bioinformatics researcher—exploring the spaces where memory, data, and transformation meet.
 
-Curious about my work? Check out [my research](/research/).
+Curious about my work? Take a look at what I’m building.
