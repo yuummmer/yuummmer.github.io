@@ -7,16 +7,16 @@ navbar_entries:
     url: bioinformatics
 
   - title: Skills
-    url: /skills/
-    
+    url: skills
+
   - title: Glass Art
     url: glass
 
   - title: Blog
-    url: /blog/
+    url: blog
 
   - title: Contact
-    url: /contact/
+    url: contact
 
 
 project_entries:

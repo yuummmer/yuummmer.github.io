@@ -1,6 +1,5 @@
-[← Back to Home](/)
 ---
-layout: default
+layout: page
 title: About
 permalink: /about/
 ---
@@ -11,3 +10,5 @@ I create glass art using pâte de verre and kiln casting techniques, giving form
 This way of thinking extends into my work in bioinformatics. I’m drawn to systems—molecular, emotional, structural—and to the patterns hidden within them. Whether I’m layering powdered glass into a mold or analyzing gene expression data, I find myself entering the same intuitive flow: shaping complexity into form, revealing the invisible. Both art and code allow me to explore what’s beneath the surface—to make sense of shifting structures and translate internal processes into something tangible.
 
 I’m currently studying bioinformatics through UC San Diego Extension, developing projects that combine scientific inquiry, storytelling, and data analysis. In both my artistic and scientific work, I’m interested in the in-between spaces—the places where thought becomes form, where memory meets transformation, and where meaning is shaped by choice.
+
+[← Back to Home](/)
