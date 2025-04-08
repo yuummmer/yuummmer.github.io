@@ -1,0 +1,73 @@
+---
+layout: page
+title: Skills and Resources
+permalink: /skills/
+---
+
+## 🧪 Skills and Resources
+
+- name: Python
+  category: Programming & Analysis
+  desc: Used for building data pipelines, analyzing text, and creating interactive tools with Streamlit.
+  link_text: Python Crash Course (Free Book)
+  link_url: https://ehmatthes.github.io/pcc/
+  tags: [scripting, streamlit, nlp, active]
+
+- name: R & Statistical Learning
+  category: Programming & Analysis
+  desc: Learning supervised learning methods in R, based on ISLR. Covers regression, classification, bootstrapping, and more.
+  link_text: View the free course
+  link_url: https://www.edx.org/learn/statistics/stanford-university-statistical-learning
+  tags: [tidyverse, regression, stats, in-progress]
+
+- name: Streamlit
+  category: Web Apps & Visualization
+  desc: A Python framework I use to turn data science and LLM projects into interactive web apps.
+  link_text: Streamlit Docs & Tutorials
+  link_url: https://docs.streamlit.io/
+  tags: [ui, app-building, llm, active]
+
+- name: ggplot2
+  category: Web Apps & Visualization
+  desc: Visualization tool in R for creating layered, publication-quality plots.
+  link_text: ggplot2 Reference
+  link_url: https://ggplot2.tidyverse.org/
+  tags: [visualization, tidyverse, r, active]
+
+- name: LangChain & Ollama
+  category: LLM Tools
+  desc: Used to create document Q&A tools and summarize regulatory/strategic texts.
+  link_text: LangChain Documentation
+  link_url: https://docs.langchain.com/
+  tags: [llm, chatbot, summarization, active]
+
+- name: ChromaDB
+  category: LLM Tools
+  desc: A vector database for semantic document search and RAG-based pipelines.
+  link_text: ChromaDB GitHub
+  link_url: https://github.com/chroma-core/chroma
+  tags: [llm, vectorstore, rag, active]
+
+- name: FastQC
+  category: Bioinformatics
+  desc: Checking sequencing read quality before downstream analysis.
+  link_text: FastQC Documentation
+  link_url: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
+- name: Git & GitHub
+  category: Tools & Workflow
+  desc: Used for tracking learning projects, version control, and public portfolio publishing.
+  link_text: GitHub Learning Lab
+  link_url: https://lab.github.com/
+  tags: [workflow, reproducibility, collaboration]
+
+- name: Conda & WSL
+  category: Tools & Workflow
+  desc: Used for managing environments and running bioinformatics tools in a Linux shell on Windows.
+  link_text: WSL Setup Guide
+  link_url: https://learn.microsoft.com/en-us/windows/wsl/install
+  tags: [environment, reproducibility, command-line]
+
+---
+
+Would you like to collaborate on a project or chat about bioinformatics + LLMs? [Contact me here](/contact/)!

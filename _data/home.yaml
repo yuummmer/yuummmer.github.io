@@ -6,6 +6,9 @@ navbar_entries:
   - title: Bioinformatics
     url: bioinformatics
 
+  - title: Skills
+    url: /skills/
+    
   - title: Glass Art
     url: glass
 
@@ -17,13 +20,17 @@ navbar_entries:
 
 
 project_entries:
-  - title: FDA Cosmetics Chatbot
+  - title: FDA Cosmetic Advisor Chatbot
     url: fda-chatbot
-    desc: An interactive chatbot that helps users find answers based on FDA guidelines for cosmetics.
+    desc: |
+    A chatbot built using a retrieval-augmented generation (RAG) system that helps users understand FDA regulations for cosmetics.  
+    *Focus: document summarization, ChromaDB, LangChain, PDF ingestion* 
 
-  - title: Amazon Analyzer
+  - title: Amazon Annual Report Analyzer
     url: amazon-analyzer
-    desc: An AI powered web app that uses keywords to surface Amazon focus areas
+    desc: |
+    A Streamlit app that uses LLMs and data visualizations to explore strategic shifts in Amazon’s annual reports over 19 years.  
+    *Focus: sentiment analysis, word frequency trends, thematic comparisons, early forecasting ideas*
 
   # - title: Project 3
   #   url: overview-post
