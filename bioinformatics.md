@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Bioinformatics"
+layout: page
+title: Bioinformatics
 permalink: /bioinformatics/
 ---
 
