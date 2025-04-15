@@ -27,12 +27,13 @@ The FASTA file I used was provided as part of the course and represents a prokar
 ## What GALES Does
 
 GALES takes a prokaryotic genome sequence and automates the steps of:
-- Predicting coding sequences (CDS) using **Prodigal**
+- Predicting coding sequences (CDS) using **Prodigal**, a fast and widely used tool for identifying protein-coding genes in microbial genomes
 - Translating DNA to protein sequences
-- Annotating predicted proteins using **RAPSearch2** and a reference database (e.g., UniProt)
+- Annotating predicted proteins using **RAPSearch2**, a faster alternative to BLAST that aligns protein sequences against reference databases
+- Using a curated protein reference database like **SwissProt**, which is part of the UniProt collection and provides high-quality, manually reviewed protein annotations
 - Outputting a `.gff3` file and supporting files like `.faa`, `.fna`, and `.blast` reports
 
-All of this is combined with CWL, making the workflow portable and reproducible.
+All of this is combined using **CWL (Common Workflow Language)**, a standardized format for describing data analysis pipelines that helps make them reproducible and shareable across systems.
 
 ---
 ## Terminal Blur
@@ -99,4 +100,3 @@ Honestly, wrestling with CWL inputs taught me a lot more than I expected. And I 
 I'm really excited to have taken this first deep dive into understanding how a bioinformatics pipeline works. GALES helped me connect the dots between raw sequencing data and meaningful biological insight. Even though some parts (like the Cheetah visualization) didn’t go as planned, the process of troubleshooting and figuring things out gave me a much better understanding of what’s actually happening.
 
 Lately, I’ve been thinking how cool it would be to collect my own environmental sample and send it to a lab for sequencing. I’m starting to brainstorm a little side project — we’ll see if I can pull it off soon!
-
