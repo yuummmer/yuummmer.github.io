@@ -43,7 +43,7 @@ The first time I ran the pipeline, a blizzard of information flashed across my s
 # Correct way to save output:
 blastp -query input.faa -db dbs/swissprot -out results.blast -outfmt 6
 
-# Mini test to validate the command structure before going all in
+# Mini test to validate the command structure
 head -n 20 input.faa > test_input.faa
 blastp -query test_input.faa -db dbs/swissprot -out test_output.blast -outfmt 6
 ```
@@ -55,28 +55,25 @@ To run GALES, I used a virtual environment in WSL with Docker installed (though 
 
 GALES generated a bunch of the expected output files like:
 
-prodigal.annotation.gff3
-prodigal.annotation.faa
-attributor.annotation.gff3
-attributor.annotation.fna
+- prodigal.annotation.gff3
+- prodigal.annotation.faa
+- attributor.annotation.gff3
+- attributor.annotation.fna
 
 The attributor.annotation.gff3 file was my main deliverable — a structured file listing gene positions and predicted functions.
 
 ---
 ### 📊 Quick Stats
 
-- **Genes predicted**: 4,338  
-- **Output file size**: ~2.3 MB (GFF3)  
-- **Pipeline runtime**: ~10–15 minutes on a local machine with 16 threads
+- *Genes predicted**: 4,338  
+- *Output file size**: ~2.3 MB (GFF3)  
+- *Pipeline runtime**: ~10–15 minutes on a local machine with 16 threads
 ---
 
 ## What a GFF3 Annotation Looks Like
 Here’s a small sample from the huge `attributor.annotation.gff3` file I produced — this is where predicted genes, coding sequences, and annotations are recorded line by line. I like to open this kind of file in Sublime Text, which is my go-to text editor.
 
-##gff-version 3
-contig_1	prodigal	CDS	190	866	.	+	0	ID=cds0;product=ATP synthase subunit beta [Escherichia coli]
-contig_1	prodigal	CDS	935	1400	.	+	0	ID=cds1;product=hypothetical protein
-contig_1	prodigal	CDS	1500	2100	.	-	0	ID=cds2;product=DNA polymerase III subunit alpha [E. coli]
+![gff-version 3](\assets\static\attributor_annotation_bioinfo.png")
 
 Each row represents a feature (like a predicted gene or protein), and the columns include:
 
@@ -87,7 +84,7 @@ Each row represents a feature (like a predicted gene or protein), and the column
 - Strand (+ or -)
 - Annotation info, like a predicted product name
 
-You’ll notice terms like “hypothetical protein” — that’s bioinformatics shorthand for “we’re pretty sure this is a gene, but we don’t yet know what it does.”
+You’ll notice terms like “hypothetical protein” — that’s bioinformatics for: pretty sure this is a gene, but we don’t know what yet.
 
 ## Cheetah Got out of Hand 🐆
 
