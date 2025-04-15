@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Bioinformatics
 permalink: /bioinformatics/
 ---
@@ -22,8 +22,8 @@ I’m currently studying bioinformatics through UC San Diego Extension, building
 ## 🧪 Currently Learning
 
 - **Modern -Omics** (UC San Diego Extension)
-- **Statistical Learning with R** (Stanford Online)
-- **Foundations of Biology** (personal refresher)
+- **[Statistical Learning with R - Stanford Online](https://learning.edx.org/course/course-v1:StanfordOnline+STATSX0001+2T2023/home))
+- **[Transcriptomics](https://diytranscriptomics.com/)
 
 ---
 
