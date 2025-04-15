@@ -73,7 +73,7 @@ The attributor.annotation.gff3 file was my main deliverable — a structured fil
 ## What a GFF3 Annotation Looks Like
 Here’s a small sample from the huge `attributor.annotation.gff3` file I produced — this is where predicted genes, coding sequences, and annotations are recorded line by line. I like to open this kind of file in Sublime Text, which is my go-to text editor.
 
-![gff-version 3](\assets\static\attributor_annotation_bioinfo.png")
+![gff3 file sample](\assets\static\attributor_annotation_bioinfo.png)
 
 Each row represents a feature (like a predicted gene or protein), and the columns include:
 
