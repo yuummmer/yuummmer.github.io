@@ -9,6 +9,7 @@ tags: [genome annotation, CWL, GALES, microbial genomics, FASTA]
 > *"Science has taught me that everything is more complicated than we first assume, and that being able to derive happiness from discovery is a recipe for a beautiful life."*  
 > — *Hope Jahren,* **Lab Girl**
 
+<a href="{{ "/" | relative_url }}">← Back to Home</a>
 
 ## From FASTA to Function
 
