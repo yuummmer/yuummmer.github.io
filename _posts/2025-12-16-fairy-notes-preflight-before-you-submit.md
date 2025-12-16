@@ -24,6 +24,9 @@ A preflight is a quick pass over your dataset (usually the metadata table) that 
 - **Remediation hints** (what broke + what to do next)
 - Optionally: a small “bundle” of artifacts (reports, manifests, provenance notes) so you can reproduce what you checked later
 
+![FAIRy preflight report showing blocking FAILs and a WARN with fix guidance](/assets/static/fairy_ui_findings.png)
+*Example preflight output: what’s blocking submission, why it matters, and how to fix it.*
+
 I’m building FAIRy around this  model: *validation is only useful if it helps you fix things.*
 
 ## The 5 boring issues that cause most chaos
