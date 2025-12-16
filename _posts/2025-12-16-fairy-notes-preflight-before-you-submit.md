@@ -6,9 +6,14 @@ categories: [fairy-notes, data, bioinformatics]
 permalink: /bioinformatics/journey/:year/:month/:day/:title/
 ---
 
-Most dataset submission pain isn't *hard* but annoying. Its often not the case that the science is wrong but that the data needs to be put into a certain format. That formatting for different receievers is the work that can be tedious when you are working with a dataset.
+> *“My philosophy on technology is that people shouldn’t have to understand it in order to be able to use it.”*
+> — *Radia Perlman*
 
-So from that idea, I kept coming back to, I decided to build a metadata manipulation tool. The idea is this:
+<a href="{{ "/" | relative_url }}">← Back to Home</a>
+
+Most dataset submission pain isn't *hard*, it's just annoying. Its usually not that the science is wrong. It's that the same dataset has to be shaped into a slightly different format for each receiver: a repository, a curator, a collaborator, a tool. And when you’re already deep in research mode, that “just put it in the right format” work can feel like needless friction.
+
+I kept coming back to the same idea, so I decided to build a small metadata manipulation tool. The idea is this:
 
 **Run a tiny preflight locally before you submit.**  
 Not to make your data perfect — just to catch the preventable problems early and make fixes less miserable.
@@ -24,10 +29,10 @@ A preflight is a quick pass over your dataset (usually the metadata table) that 
 I’m building FAIRy around this  model: *validation is only useful if it helps you fix things.*
 
 ## The 5 boring issues that cause most chaos
-These show up across domains — genomics, biodiversity, random CSV someone exported from a database...
+These show up across domains — genomics, biodiversity, and every random CSV someone exported from a database.
 
 ### 1) IDs that aren’t stable
-If an `id` column changes between exports, it breaks joins, annotations, deduping, and the prior fixes of the dataset from last run!
+If an `id` column changes between exports, it breaks joins, annotations, deduping, and even your own “what did I fix last time?” notes.
 
 **Preflight check:** ID is present, unique, and doesn’t contain obvious formatting weirdness (like spaces).
 
@@ -68,13 +73,23 @@ If you’re a…
 - **Curator/reviewer:** share a preflight checklist (or rulepack) so feedback is consistent and less bespoke.
 - **Tool builder:** treat rulepacks like “lint rules” for datasets — something the community can version and improve.
 
+## The vision
+I want dataset submission to feel more like running tests on code: quick, local, and obvious about what to fix.
+The point is cutting down preventable back-and-forth so curators and researchers spend their time on the work they’re actually trained to do.
+FAIRy runs locally, applies a shared set of requirements (“rulepacks”), and produces something you can act on: a clear fix list.
+Over time, I want these rulepacks to be reusable and updated to community standards.
+
 ## Where FAIRy fits
 FAIRy is my attempt to make this workflow easy: run a command locally, get a report that tells you what’s blocking, what’s risky, and what to fix next — without uploading raw data anywhere by default.
 
 This is still early and evolving, but the *direction* is pretty stable: **turn validation into remediation.**
 
-## Follow Along!
+## Follow Along
 
-I’m figuring out my path in bioinformatics by exploring a mix of courses, hands-on projects, and challenges. Along the way, I’ve found some incredible resources that have helped shape my learning, and I plan to share them here along with my own projects and ideas.
+I’m sharing these **FAIRy Notes** as I build a local-first “preflight” for research datasets — the boring checks that save time later.
 
-If you're also navigating bioinformatics, machine learning, or AI, let’s learn and explore together! Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/jenniferslotnick/), [GitHub](https://github.com/yuummmer), or my [contact page](/contact/). 🚀
+If you want to check it out:
+- FAIRy (code + issues): [github.com/yuummmer/fairy-core](https://github.com/yuummmer/fairy-core)
+- More on the project (and the institutional side) lives at: [datadabra.com](https://datadabra.com)
+
+And if you’re working with messy metadata (genomics, biodiversity, anything tabular) and have a “this always breaks” example, I’d love to hear it. You can reach me on [LinkedIn](https://www.linkedin.com/in/jenniferslotnick/) or [GitHub](https://github.com/yuummmer).
