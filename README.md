@@ -11,25 +11,25 @@ This is my personal website and blog, built with [Jekyll](https://jekyllrb.com/)
 - Comments via Utterances
 
 ## Setup Instructions
-To run this website locally:
 
-1. **Clone the repository**  
-   ```sh
-   git clone https://github.com/yuummmer/yuummmer.github.io.git
-   cd yuummmer.github.io
-   ```
+### Run locally (recommended: WSL / Ubuntu)
+If you're using WSL, clone and run this repo from the Linux filesystem (e.g. `~/sites/...`), not from `/mnt/c/...` (OneDrive/Windows paths can be slow and may cause Jekyll to hang).
 
-2. **Install dependencies**  
-   Make sure you have Ruby and Bundler installed, then run:
-   ```sh
-   bundle install
-   ```
+```sh
+mkdir -p ~/sites
+cd ~/sites
+git clone https://github.com/yuummmer/yuummmer.github.io.git
+cd yuummmer.github.io
 
-3. **Run the Jekyll server**  
-   ```sh
-   bundle exec jekyll serve
-   ```
-   The website should now be accessible at `http://localhost:4000`.
+# Install gems locally (avoids permission issues)
+bundle config set --local path 'vendor/bundle'
+bundle install
+
+bundle exec jekyll serve
+# optional:
+# bundle exec jekyll serve --livereload
+```
+The website should now be accessible at `http://localhost:4000`.
 
 ## Deployment
 The site is hosted on **GitHub Pages**. Any changes pushed to the `main` branch will trigger a rebuild and deploy automatically.
