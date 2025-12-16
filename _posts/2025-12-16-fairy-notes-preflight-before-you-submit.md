@@ -9,8 +9,6 @@ permalink: /bioinformatics/journey/:year/:month/:day/:title/
 > *“My philosophy on technology is that people shouldn’t have to understand it in order to be able to use it.”*
 > — *Radia Perlman*
 
-<a href="{{ "/" | relative_url }}">← Back to Home</a>
-
 Most dataset submission pain isn't *hard*, it's just annoying. Its usually not that the science is wrong. It's that the same dataset has to be shaped into a slightly different format for each receiver: a repository, a curator, a collaborator, a tool. And when you’re already deep in research mode, that “just put it in the right format” work can feel like needless friction.
 
 I kept coming back to the same idea, so I decided to build a small metadata manipulation tool. The idea is this:
